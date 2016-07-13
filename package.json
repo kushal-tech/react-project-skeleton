@@ -1,0 +1,32 @@
+{
+  "name": "git-react-project",
+  "version": "1.0.0",
+  "description": "Test project with react and github",
+  "main": "index.js",
+  "scripts": {
+    "start":"watchify src/index.js -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushaljain03/goldlasso.git"
+  },
+  "keywords": [
+    "react",
+    "github",
+    "firstproject"
+  ],
+  "author": "Kushal Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kushaljain03/goldlasso/issues"
+  },
+  "homepage": "https://github.com/kushaljain03/goldlasso#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "watchify": "^3.7.0"
+  }
+}
