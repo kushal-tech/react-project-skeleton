@@ -10,7 +10,7 @@ function getConfiguration(env) {
   var pluginsUsed = [];
   var modeUsed = "development";
   var optimize = {};
-  var appPath = 'C://Users//Kushal//';
+  var appPath = 'E://Kushal//www//';
 
   if (env === 'prod') {
     modeUsed = "production";
@@ -100,9 +100,9 @@ function getConfiguration(env) {
     finalOut.push(getConfigOutput());
   } else {
     finalOut.push(getConfigOutput());
-    //var data = getConfigOutput();
-    //data.output.path = path.resolve(__dirname, appPath);
-    //finalOut.push(data);
+    var data = getConfigOutput();
+    data.output.path = path.resolve(__dirname, appPath);
+    finalOut.push(data);
   }
 
   return finalOut;

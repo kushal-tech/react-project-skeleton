@@ -3,7 +3,7 @@ var express = require('express');
 var fs = require('fs');
 
 var app = express();
-var port = 8080;
+var port = 3400;
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next) {
     // Set permissive CORS header - this allows this server to be used only as
